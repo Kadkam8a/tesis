@@ -15,7 +15,11 @@ if add_sidebar == 'Generación A':
     metrica_conteo= st.selectbox('Selecciona la métrica',('TF-IDF', 'Frecuencia'))
     
     if metrica_conteo == 'TF-IDF':
-        df = pd.read_csv("TF-IDF.csv", index_col=0)
+        df = pd.read_csv("C:/Users/karim/Documents/TICS/Tesis/Streamlit/TF-IDF.csv", index_col=0)
+        st.write(df)
+    
+    if metrica_conteo == 'Frecuencia':
+        df = pd.read_csv("C:/Users/karim/Documents/TICS/Tesis/FrecuenciasGenA.csv", index_col=0)
         st.write(df)
     
     df_agg_metrics = df_agg[['Video publish time','Views','Likes','Subscribers','Shares','Comments added','RPM(USD)','Average % viewed',
