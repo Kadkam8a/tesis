@@ -4,7 +4,7 @@ señal,4,9,12,NOUN
 A,38,123,157,ADP
 Francisco,1,7,,PROPN
 Arredondo,1,,,PROPN
-",",3139,2971,7141,PUNCT
+",",3139,2971,7137,PUNCT
 mi,163,12,101,DET
 abuelo,2,2,1,NOUN
   ,29,98,133,SPACE
@@ -22,7 +22,7 @@ sombra,9,16,12,NOUN
 del,12,44,13,ADP
 amate,2,,,NOUN
 mirando,25,38,10,VERB
- ,743,3347,3228,SPACE
+ ,743,3347,3281,SPACE
 RománI,1,,,NOUN
 y,1301,2810,2483,CCONJ
 JulioI,21,,,PROPN
@@ -31,7 +31,7 @@ el,770,1823,2571,DET
 volley-ball,1,,,NOUN
 poca,3,,2,DET
 distancia,4,7,22,NOUN
-.,2087,4998,7741,PUNCT
+.,2087,4998,7728,PUNCT
 Empezaba,4,,,VERB
 hacer,33,66,105,VERB
 bastante,1,2,4,ADV
@@ -106,7 +106,7 @@ pasar,13,39,19,VERB
 ¿,157,530,878,PUNCT
 es,109,74,356,AUX
 raro,8,3,1,ADJ NOUN
-?,149,485,824,PUNCT
+?,149,485,822,PUNCT
 Nada,11,19,11,PRON
 tiene,20,30,25,VERB
 puesto,1,5,1,VERB NOUN
@@ -765,14 +765,14 @@ bruto,1,,1,NOUN ADJ
 eres,11,6,2,AUX
 mano,40,68,57,NOUN
 caes,1,,,VERB
-!,48,508,295,PUNCT
+!,48,508,294,PUNCT
 tú,23,16,57,PRON
 Mira,5,1,3,VERB INTJ
 cómo,25,40,68,PRON
 dejaste,1,,3,VERB
 Seguía,2,2,4,VERB
 parecía,42,44,35,VERB
-tal,8,9,2,NOUN DET
+tal,8,9,1,NOUN
 observaba,4,7,12,VERB
 cuenta,5,11,1,NOUN VERB
 Te,4,21,25,PRON
@@ -1882,7 +1882,7 @@ sabio,2,1,,ADJ
 difícil,11,5,19,ADJ
 alegró,1,,2,VERB
 dolorosa,3,1,5,ADJ
-   ,3,3,4,SPACE
+   ,3,3,5,SPACE
 OlgaI,1,,,PROPN
 creer,7,4,8,VERB
 debían,3,3,1,AUX VERB
@@ -16612,7 +16612,7 @@ corregido,,,1,VERB
 devaneos,,,1,NOUN
 orientados,,,1,ADJ
 mote,,,3,NOUN
-Alazana,,,39,PROPN
+JuliaAcevedoR,,,8,PROPN
 afirmó,,,3,VERB
 sabido,,,2,VERB
 indispensable,,,9,ADJ
@@ -16849,7 +16849,6 @@ apodo,,,4,NOUN
 malévolo,,,1,ADJ
 Arrebató,,,1,PROPN
 escudaba,,,1,VERB
-JuliaAcevedoR,,,6,PROPN
 gentuza,,,1,NOUN
 respetable,,,3,ADJ
 afrentar,,,1,VERB
@@ -19098,6 +19097,7 @@ enaltecer,,,1,VERB
 perfeccionar,,,1,VERB
 talismán,,,1,NOUN
 cualidad,,,2,NOUN
+Alazana,,,3,PROPN
 conmiserativa,,,1,ADJ
 preciara,,,1,VERB
 significar,,,2,VERB
@@ -19303,7 +19303,6 @@ figúrese,,,1,ADJ
 vulgo,,,1,NOUN
 opinan,,,2,VERB
 brujería,,,2,NOUN
-alazana,,,1,NOUN
 atrocidad,,,1,NOUN
 averiguara,,,1,VERB
 declarar,,,4,VERB
