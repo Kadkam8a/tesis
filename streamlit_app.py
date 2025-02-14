@@ -52,6 +52,13 @@ if add_sidebar == 'Generación A':
         intento2 = df3.style.apply(pos, axis=1)
         st.write(intento2)
         st.write('Rosario')
+        df4 = pd.read_csv("FrecuenciasTipoGenArosario.csv", index_col=0)
+        df4['La Señal'] = df4['La Señal'].fillna(0).astype(int)
+        df4['Los Recuerdos del Porvenir'] = df4['Los Recuerdos del Porvenir'].fillna(0).astype(int)
+        df4['Oficio de Tinieblas'] = df4['Oficio de Tinieblas'].fillna(0).astype(int)
+        intento3 = df4.style.apply(pos, axis=1)
+        st.write(intento3)
+        
 
 
     
