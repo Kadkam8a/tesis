@@ -25,8 +25,6 @@ if add_sidebar == 'Generación A':
         df2 = pd.read_csv("FrecuenciasGenA.csv", index_col=0)
         st.write(df2)
     
-    df_agg_metrics = df_agg[['Video publish time','Views','Likes','Subscribers','Shares','Comments added','RPM(USD)','Average % viewed',
-                             'Avg_duration_sec', 'Engagement_ratio','Views / sub gained']]
 
 st.write('Hello, *World!* :sunglasses:')
 
