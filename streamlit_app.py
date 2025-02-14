@@ -42,7 +42,16 @@ if add_sidebar == 'Generación A':
         df2['Los Recuerdos del Porvenir'] = df2['Los Recuerdos del Porvenir'].fillna(0).astype(int)
         df2['Oficio de Tinieblas'] = df2['Oficio de Tinieblas'].fillna(0).astype(int)
         intento1 = df2.style.apply(pos, axis=1)
+        st.write('Inés')
         st.write(intento1)
+        st.write('Elena')
+        df3 = pd.read_csv("FrecuenciasTipoGenAelena.csv", index_col=0)
+        df3['La Señal'] = df3['La Señal'].fillna(0).astype(int)
+        df3['Los Recuerdos del Porvenir'] = df3['Los Recuerdos del Porvenir'].fillna(0).astype(int)
+        df3['Oficio de Tinieblas'] = df3['Oficio de Tinieblas'].fillna(0).astype(int)
+        intento2 = df3.style.apply(pos, axis=1)
+        st.write(intento2)
+        st.write('Rosario')
 
 
     
