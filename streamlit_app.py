@@ -38,7 +38,6 @@ if add_sidebar == 'Generación A':
     
     if metrica_conteo == 'Frecuencia':
         df2 = pd.read_csv("FrecuenciasTipoGenA.csv", index_col=0)
-        df2['La Señal'] = df2['La Señal'].astype(int)
         intento1 = df2.style.apply(pos, axis=1)
         st.write(intento1)
 
