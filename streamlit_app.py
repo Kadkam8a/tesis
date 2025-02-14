@@ -5,6 +5,21 @@ import streamlit as st
 from datetime import time, datetime
 
 
+def pos(fila):
+    # Verifica si algún valor en la fila es 'VERB'
+    if 'VERB' in fila.values:
+        # Si es así, toda la fila se pone verde
+        return ['background-color: #d4edb7'] * len(fila)
+    elif 'NOUN' in fila.values:
+        # Si es así, toda la fila se pone verde
+        return ['background-color: #d8b7ed'] * len(fila)
+    elif 'ADJ' in fila.values:
+        # Si es así, toda la fila se pone verde
+        return ['background-color: #edd4b7'] * len(fila)
+    else:
+        # Si no, deja la fila sin color
+        return [''] * len(fila)
+
 st.header('ACD y NLP')
 
 # Ejemplo 1
@@ -22,9 +37,14 @@ if add_sidebar == 'Generación A':
         st.write(dfaa)
     
     if metrica_conteo == 'Frecuencia':
-        df2 = pd.read_csv("FrecuenciasGenA.csv", index_col=0)
-        st.write(df2)
+        df2 = pd.read_csv("FrecuenciasTipoGenA.csv", index_col=0)
+        intento1 = df2.style.apply(pos, axis=1)
+        st.write(intento1)
+
+
     
+    df_agg_metrics = df_agg[['Video publish time','Views','Likes','Subscribers','Shares','Comments added','RPM(USD)','Average % viewed',
+                             'Avg_duration_sec', 'Engagement_ratio','Views / sub gained']]
 
 st.write('Hello, *World!* :sunglasses:')
 
