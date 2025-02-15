@@ -59,8 +59,8 @@ if add_sidebar == 'Generación A':
         intento3 = df4.style.apply(pos, axis=1)
         st.write(intento3)
 
-elif add_sidebar == 'Generación B':
-     
+if add_sidebar == 'Generación B':
+
      metrica_conteo= st.selectbox('Selecciona la métrica',('TF-IDF', 'Frecuencia'))
 
      if metrica_conteo == 'TF-IDF':
