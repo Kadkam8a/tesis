@@ -23,7 +23,7 @@ def pos(fila):
 st.header('ACD y NLP')
 
 # Ejemplo 1
-add_sidebar = st.sidebar.selectbox('Selecciona la Generación', ('Generación A','Generación B'))
+add_sidebar = st.sidebar.selectbox('Generación A', ('Generación A','Generación B'))
 
 if add_sidebar == 'Generación A':
 
@@ -58,7 +58,6 @@ if add_sidebar == 'Generación A':
         st.write(intento3)
 
 
-metrica_conteo= st.selectbox('Selecciona la métrica',('TF-IDF', 'Frecuencia'))
 if add_sidebar == 'Generación B':
 
      metrica_conteo= st.selectbox('Selecciona la métrica',('TF-IDF', 'Frecuencia'))
