@@ -33,8 +33,6 @@ if add_sidebar == 'Generación A':
         df1 = pd.read_csv("TF-IDF.csv", index_col=0)
         st.write(df1)
 
-        dfaa = pd.read_csv("FrecuenciasTipoGenA.csv", index_col=0)
-        st.write(dfaa)
     
     if metrica_conteo == 'Frecuencia':
         df2 = pd.read_csv("FrecuenciasTipoGenA.csv", index_col=0)
