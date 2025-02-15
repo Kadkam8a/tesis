@@ -60,7 +60,9 @@ if add_sidebar == 'Generación A':
         st.write(intento3)
 
 elif add_sidebar == 'Generación B':
+     
      metrica_conteo= st.selectbox('Selecciona la métrica',('TF-IDF', 'Frecuencia'))
+
      if metrica_conteo == 'TF-IDF':
         df4 = pd.read_csv("TF-IDFB.csv", index_col=0)
         st.write(df4)
