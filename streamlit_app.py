@@ -29,11 +29,6 @@ if add_sidebar == 'Sustantivos':
 
     metrica_conteo= st.selectbox('Selecciona la métrica',('TF-IDF', 'Frecuencia'))
     
-    if metrica_conteo == 'TF-IDF':
-        df1 = pd.read_csv("TF-IDF.csv", index_col=0)
-        st.write(df1)
-
-    
     if metrica_conteo == 'Frecuencia':
         df2 = pd.read_csv("sustantivos.csv", index_col=0)
         st.write(df2)
