@@ -23,9 +23,9 @@ def pos(fila):
 st.header('ACD y NLP')
 
 # Ejemplo 1
-add_sidebar = st.sidebar.selectbox('Generación A', ('Generación A','Generación B'))
+add_sidebar = st.sidebar.selectbox('Sustantivos', ('Sustantivos','Adjetivos'))
 
-if add_sidebar == 'Generación A':
+if add_sidebar == 'Sustantivos':
 
     metrica_conteo= st.selectbox('Selecciona la métrica',('TF-IDF', 'Frecuencia'))
     
@@ -35,35 +35,15 @@ if add_sidebar == 'Generación A':
 
     
     if metrica_conteo == 'Frecuencia':
-        df2 = pd.read_csv("FrecuenciasTipoGenA.csv", index_col=0)
-        df2['La Señal'] = df2['La Señal'].fillna(0).astype(int)
-        df2['Los Recuerdos del Porvenir'] = df2['Los Recuerdos del Porvenir'].fillna(0).astype(int)
-        df2['Oficio de Tinieblas'] = df2['Oficio de Tinieblas'].fillna(0).astype(int)
-        intento1 = df2.style.apply(pos, axis=1)
-        st.write('Inés')
-        st.write(intento1)
-        st.write('Elena')
-        df3 = pd.read_csv("FrecuenciasTipoGenAelena.csv", index_col=0)
-        df3['La Señal'] = df3['La Señal'].fillna(0).astype(int)
-        df3['Los Recuerdos del Porvenir'] = df3['Los Recuerdos del Porvenir'].fillna(0).astype(int)
-        df3['Oficio de Tinieblas'] = df3['Oficio de Tinieblas'].fillna(0).astype(int)
-        intento2 = df3.style.apply(pos, axis=1)
-        st.write(intento2)
-        st.write('Rosario')
-        df4 = pd.read_csv("FrecuenciasTipoGenArosario.csv", index_col=0)
-        df4['La Señal'] = df4['La Señal'].fillna(0).astype(int)
-        df4['Los Recuerdos del Porvenir'] = df4['Los Recuerdos del Porvenir'].fillna(0).astype(int)
-        df4['Oficio de Tinieblas'] = df4['Oficio de Tinieblas'].fillna(0).astype(int)
-        intento3 = df4.style.apply(pos, axis=1)
-        st.write(intento3)
+        df2 = pd.read_csv("sustantivos.csv", index_col=0)
+        st.write(df2)
 
-
-if add_sidebar == 'Generación B':
+if add_sidebar == 'Adjetivos':
 
      metrica_conteo= st.selectbox('Selecciona la métrica',('TF-IDF', 'Frecuencia'))
 
-     if metrica_conteo == 'TF-IDF':
-        df4 = pd.read_csv("TF-IDFB.csv", index_col=0)
+     if metrica_conteo == 'Frecuencia':
+        df4 = pd.read_csv("adjetivos.csv", index_col=0)
         st.write(df4)
 
 
