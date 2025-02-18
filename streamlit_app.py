@@ -27,7 +27,7 @@ add_sidebar = st.sidebar.selectbox('Sustantivos', ('Sustantivos','Adjetivos'))
 
 if add_sidebar == 'Sustantivos':
 
-    metrica_conteo= st.selectbox('Selecciona la métrica',('TF-IDF', 'Frecuencia'))
+    metrica_conteo= st.selectbox('Selecciona la métrica',( 'Frecuencia', 'TF-IDF'))
     
     if metrica_conteo == 'Frecuencia':
         df2 = pd.read_csv("sustantivos.csv")
@@ -35,7 +35,7 @@ if add_sidebar == 'Sustantivos':
 
 if add_sidebar == 'Adjetivos':
 
-     metrica_conteo= st.selectbox('Selecciona la métrica',('TF-IDF', 'Frecuencia'))
+     metrica_conteo= st.selectbox('Selecciona la métrica',('Frecuencia', 'TF-IDF'))
 
      if metrica_conteo == 'Frecuencia':
         df4 = pd.read_csv("adjetivos.csv")
